@@ -1,0 +1,35 @@
+/* signup.component.css */
+
+/* Custom styling for card shadow */
+.card {
+    border-radius: 15px;
+  }
+  
+  /* Button hover effect */
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Input focus effect */
+  .form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #0056b3;
+  }
+  
+  /* Form heading */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  /* Custom spacing */
+  .mt-5 {
+    margin-top: 3rem !important;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  

@@ -1,0 +1,74 @@
+<header>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand" href="#">House Rent</a>
+
+    <!-- Toggler for smaller screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Left Side (Links like Home, Property List, Category) -->
+      <ul class="navbar-nav mr-auto">
+        <!-- Home Link -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <!-- Property List Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownProperty" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Property List
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownProperty">
+            <a class="dropdown-item" href="#">Dhaka</a>
+            <a class="dropdown-item" href="#">Chittagong</a>
+            <a class="dropdown-item" href="#">Khulna</a>
+            <a class="dropdown-item" href="#">Rajshahi</a>
+            <a class="dropdown-item" href="#">Barisal</a>
+            <a class="dropdown-item" href="#">Sylhet</a>
+            <a class="dropdown-item" href="#">Rangpur</a>
+            <a class="dropdown-item" href="#">Mymensingh</a>
+          </div>
+        </li>
+
+        <!-- Category Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownCategory" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownCategory">
+            <a class="dropdown-item" href="#">Family</a>
+            <a class="dropdown-item" href="#">Sublet</a>
+            <a class="dropdown-item" href="#">Bachelor</a>
+            <a class="dropdown-item" href="#">Roommate</a>
+          </div>
+        </li>
+
+        <!-- Add Property Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:4200/add-property">+ Add Property</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+       <!-- Right Side (Search and Login) -->
+       <ul class="navbar-nav">
+        <!-- Search Bar -->
+        <li class="nav-item ml-3">
+          <form class="d-inline-block" role="search">
+            <input class="form-control d-flex" type="search" placeholder="Search Properties" aria-label="Search">
+          </form>
+        </li>
+
+        <!-- Login Link -->
+        <li class="nav-item ml-3">
+          <a class="nav-link" href="http://localhost:4200/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
