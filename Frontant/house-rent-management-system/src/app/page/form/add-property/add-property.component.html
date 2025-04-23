@@ -1,0 +1,112 @@
+<!-- add-property.component.html -->
+<div class="container mt-5">
+  <!-- Card to contain the form -->
+  <div class="card shadow-lg p-4 rounded">
+    <h2 class="text-center mb-4 text-primary">Add Property</h2>
+
+    <!-- Form -->
+    <form>
+      <!-- Category ID (Dropdown) -->
+      <div class="form-group">
+        <label for="categoryId" class="font-weight-bold">Category</label>
+        <select id="categoryId" class="form-control" name="categoryId" required>
+          <option value="" disabled selected>Select a Category</option>
+          <option>Family</option>
+          <option>Sublet</option>
+          <option>Bachelor</option>
+          <option>Roommate</option>
+        </select>
+      </div>
+
+      <!-- Property Title -->
+      <div class="form-group">
+        <label for="title" class="font-weight-bold">Property Title</label>
+        <input type="text" id="title" class="form-control" name="title" placeholder="Enter property title"
+          required
+        />
+      </div>
+
+      <!-- Size in Square Feet -->
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="size" class="font-weight-bold">Size (in Square Feet)</label>
+          <input type="number" id="size" class="form-control" name="size" placeholder="Enter property size in sq ft"
+            required min="0"
+          />
+        </div>
+
+        <!-- Number of Bedrooms -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="bedrooms" class="font-weight-bold">Bedroom</label>
+            <input type="number" id="bedrooms" class="form-control" name="bedrooms" placeholder="Enter number of bedrooms"
+              required min="0"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Number of Bathrooms -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="bathrooms" class="font-weight-bold">Bathroom</label>
+            <input type="number" id="bathrooms" class="form-control" name="bathrooms" placeholder="Enter number of bathrooms"
+              required min="0"
+            />
+          </div>
+        </div>
+
+        <!-- Number of Balconies -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="balcony" class="font-weight-bold">Balconie</label>
+            <input type="number" id="balcony" class="form-control" name="balcony" placeholder="Enter number of balconies"
+              required min="0"
+            />
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="form-group">
+          <label for="description" class="font-weight-bold">Description</label>
+          <textarea id="description" class="form-control" name="description" rows="4" placeholder="Enter property description"
+          required
+          ></textarea>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label for="address" class="font-weight-bold">Address</label>
+          <textarea id="address" class="form-control" name="address" rows="3" placeholder="Enter property address"
+          required
+          ></textarea>
+        </div>
+
+        <div class="row">
+          <!-- Rent Amount -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="rentAmount" class="font-weight-bold">Rent Amount/Month (BDT)</label>
+              <input type="number" id="rentAmount" class="form-control" name="rentAmount" placeholder="Enter rent amount in BDT"
+              required min="0"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Picture Upload (Multiple Pictures) -->
+        <div class="form-group">
+          <label for="propertyImage" class="font-weight-bold"> Upload Pictures </label>
+          <input type="file" id="propertyImage" class="form-control-file" name="propertyImage" accept="image/*" multiple required />
+          <small class="form-text text-muted">You can select multiple images (JPG, PNG, GIF).</small>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg mt-4">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

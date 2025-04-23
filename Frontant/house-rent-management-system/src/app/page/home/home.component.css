@@ -1,0 +1,13 @@
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px); /* Moves the card up */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for images inside the card */
+  .card-img:hover {
+    transform: scale(1.05); /* Slightly zooms in the image */
+    transition: all 0.3s ease-in-out;
+  }
+  
