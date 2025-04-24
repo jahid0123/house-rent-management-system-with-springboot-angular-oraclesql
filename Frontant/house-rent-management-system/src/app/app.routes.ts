@@ -6,6 +6,7 @@ import { SingupComponent } from './page/form/singup/singup.component';
 import { AboutComponent } from './page/about/about.component';
 import { HomeComponent } from './page/home/home.component';
 import { AddPropertyComponent } from './page/form/add-property/add-property.component';
+import { ViewDetailsComponent } from './page/view/view-details/view-details.component';
 
 export const routes: Routes = [
 
@@ -16,5 +17,6 @@ export const routes: Routes = [
     {path: 'signup', component: SingupComponent},
     {path: 'about', component: AboutComponent},
     {path: 'add-property', component: AddPropertyComponent},
+    {path: 'view-details', component: ViewDetailsComponent},
     {path: '**', redirectTo: 'home'}
 ];
