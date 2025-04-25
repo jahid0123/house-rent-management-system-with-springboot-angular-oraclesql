@@ -1,74 +1,93 @@
 <header>
-  <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <!-- Navbar Brand -->
-    <a class="navbar-brand" href="#">House Rent</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Rent House</a>
 
-    <!-- Toggler for smaller screens -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Toggler for mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <!-- Left Side (Links like Home, Property List, Category) -->
-      <ul class="navbar-nav mr-auto">
-        <!-- Home Link -->
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- Left Nav Links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Property list
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Dhaka</a></li>
+              <li><a class="dropdown-item" href="#">Chittagong</a></li>
+              <li><a class="dropdown-item" href="#">Rajshahi</a></li>
+              <li><a class="dropdown-item" href="#">Sylhet</a></li>
+              <li><a class="dropdown-item" href="#">Rangpur</a></li>
+              <li><a class="dropdown-item" href="#">Khulna</a></li>
+              <li><a class="dropdown-item" href="#">Barishal</a></li>
+              <li><a class="dropdown-item" href="#">Mymensingh</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Family</a></li>
+              <li><a class="dropdown-item" href="#">Sublet</a></li>
+              <li><a class="dropdown-item" href="#">Bachelor</a></li>
+              <li><a class="dropdown-item" href="#">Roommate</a></li>
+              <li><a class="dropdown-item" href="#">House</a></li>
+              <li><a class="dropdown-item" href="#">Office</a></li>
+              <li><a class="dropdown-item" href="#">Shop</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/add-property']">Add Property</a>
+          </li>
+        </ul>
 
-        <!-- Property List Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownProperty" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Property List
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownProperty">
-            <a class="dropdown-item" href="#">Dhaka</a>
-            <a class="dropdown-item" href="#">Chittagong</a>
-            <a class="dropdown-item" href="#">Khulna</a>
-            <a class="dropdown-item" href="#">Rajshahi</a>
-            <a class="dropdown-item" href="#">Barisal</a>
-            <a class="dropdown-item" href="#">Sylhet</a>
-            <a class="dropdown-item" href="#">Rangpur</a>
-            <a class="dropdown-item" href="#">Mymensingh</a>
-          </div>
-        </li>
+        <!-- Right: Search + Login -->
+        <form class="d-flex me-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Properties...."
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
 
-        <!-- Category Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownCategory" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Category
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownCategory">
-            <a class="dropdown-item" href="#">Family</a>
-            <a class="dropdown-item" href="#">Sublet</a>
-            <a class="dropdown-item" href="#">Bachelor</a>
-            <a class="dropdown-item" href="#">Roommate</a>
-          </div>
-        </li>
-
-        <!-- Add Property Link -->
-        <li class="nav-item">
-          <a class="nav-link" routerLink="['/add-property']">+ Add Property</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-       <!-- Right Side (Search and Login) -->
-       <ul class="navbar-nav">
-        <!-- Search Bar -->
-        <li class="nav-item ml-3">
-          <form class="d-inline-block" role="search">
-            <input class="form-control d-flex" type="search" placeholder="Search Properties" aria-label="Search">
-          </form>
-        </li>
-
-        <!-- Login Link -->
-        <li class="nav-item ml-3">
-          <a [routerLink]="['/login']" class="nav-link" >Login</a>
-        </li>
-      </ul>
+        <a class="btn btn-primary" href="/login">
+          <i class="bi bi-box-arrow-in-right me-1"></i> Login
+        </a>
+      </div>
     </div>
   </nav>
 </header>
