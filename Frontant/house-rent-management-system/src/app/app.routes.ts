@@ -9,6 +9,12 @@ import { AddPropertyComponent } from './page/form/add-property/add-property.comp
 import { ViewDetailsComponent } from './page/view/view-details/view-details.component';
 import { ContactUsComponent } from './page/section/footer-content/contact-us/contact-us.component';
 import { AboutUsComponent } from './page/section/footer-content/about-us/about-us.component';
+import { BuyPackagesComponent } from './page/profile/buy-packages/buy-packages.component';
+import { SavedPropertyComponent } from './page/profile/saved-property/saved-property.component';
+import { MyPropertyComponent } from './page/profile/my-property/my-property.component';
+import { UnlockedPropertyComponent } from './page/profile/unlocked-property/unlocked-property.component';
+import { PurchaseHistoryComponent } from './page/profile/purchase-history/purchase-history.component';
+import { ChangePasswordComponent } from './page/profile/change-password/change-password.component';
 
 export const routes: Routes = [
 
@@ -22,5 +28,11 @@ export const routes: Routes = [
     {path: 'view-details', component: ViewDetailsComponent},
     {path: 'contact-us', component: ContactUsComponent},
     {path: 'about-us', component: AboutUsComponent},
+    {path: 'buy-package', component: BuyPackagesComponent},
+    {path: 'saved-property', component: SavedPropertyComponent},
+    {path: 'my-property', component: MyPropertyComponent},
+    {path: 'unlocked-property', component: UnlockedPropertyComponent},
+    {path: 'purchase-history', component: PurchaseHistoryComponent},
+    {path: 'change-password', component: ChangePasswordComponent},
     {path: '**', redirectTo: 'home'}
 ];

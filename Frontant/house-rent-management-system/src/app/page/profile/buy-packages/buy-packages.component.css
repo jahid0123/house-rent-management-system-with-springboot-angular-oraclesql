@@ -1,0 +1,22 @@
+.package-card {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-gradient {
+    background: linear-gradient(to right, #4CAF50, #45A049);
+    color: white;
+    border: none;
+    
+  }
+  
+  .btn-gradient:hover {
+    background: linear-gradient(to right, #43a047, #388e3c);
+  }
+  
